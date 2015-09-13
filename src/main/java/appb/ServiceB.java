@@ -11,7 +11,11 @@ public class ServiceB implements IServiceB {
 
 	@Override
 	public int minus(int left, int right) {
-		return left-right;
+		int result = left - right;
+
+		System.out.println("method=minus, left="+left + ", right=" + right + ", result=" + result);
+		
+		return result;
 	}
 
 }
